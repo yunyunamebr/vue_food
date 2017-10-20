@@ -19,6 +19,7 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  devtool: 'eval-source-map',
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

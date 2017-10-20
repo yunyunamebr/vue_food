@@ -1,12 +1,24 @@
-# vue-project-demo
+# vue-food 搭建指南
 
-> A Vue.js project
+## 使用vue-cli创建项目
+
+```bash
+# 全局安装 vue-cli
+$ npm install --global vue-cli
+
+# 创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project
+
+# 安装依赖
+$ cd my-project
+$ npm install
+```
 
 ## Build Setup
 
+> 各种命令命令
+
 ``` bash
-# install dependencies
-npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -27,4 +39,24 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 创建项目UI库
+
+> 本项目使用element UI
+```bash
+# 安装，适配于webpack打包工具
+npm i element-ui -S
+
+# 在项目中引用
+import Vue from 'vue'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css' //样式文件单独引用
+import App from './App.vue'
+
+Vue.use(ElementUI)
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
+
+```
