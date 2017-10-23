@@ -1,7 +1,6 @@
 
 <template>
   <div>
-    <router-view/>   
     <div class="footer">
       <router-link to="/" class="nav-bottom"><i class="el-icon-delete"></i>首页</router-link>
       <router-link to="/fair" class="nav-bottom"><i class="el-icon-goods"></i>市集</router-link>
@@ -14,12 +13,10 @@
 
 <script>
 export default {
-
 }
 </script>
 
 <style scoped>
-
 .footer {
   margin: 0;
   width: 100%;

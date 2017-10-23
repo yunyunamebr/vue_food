@@ -2,19 +2,20 @@
 <template>
   <div id="app">
     <Slogon/>
-    <Footer/>
+    <router-view/>   
+    <FooterNav/>
   </div>
 </template>
 
 <script>
 
-import Slogon from './components/Slogon.vue';
-import Footer from './components/Footer.vue';
+import Slogon from './components/Common/Slogon.vue';
+import FooterNav from './components/Common/FooterNav.vue';
 export default {
   name: 'app',
   components:{
     Slogon,
-    Footer
+    FooterNav
   }
 }
 </script>

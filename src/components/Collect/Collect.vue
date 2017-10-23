@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello animated flash">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -20,4 +20,5 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
+
 </style>

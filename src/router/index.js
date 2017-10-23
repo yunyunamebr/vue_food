@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import Fair from '@/components/Fair'
-import Collect from '@/components/Collect'
-import Mail from '@/components/Mail'
-import Me from '@/components/Me'
+import Home from '@/components/Home/Home'
+import Fair from '@/components/Fair/Fair'
+import Collect from '@/components/Collect/Collect'
+import Mail from '@/components/Mail/Mail'
+import Me from '@/components/Me/Me'
 
 Vue.use(Router)
 
