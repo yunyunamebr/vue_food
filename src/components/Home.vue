@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="search-input">
+    <el-input v-model="input" placeholder="请输入内容" prefix-icon="el-icon-search"></el-input>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '首页！'
+      input:''
     }
   }
 }
@@ -17,7 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+
+.search-input{
+  height: 200px;
+  width:50%;
 }
 </style>

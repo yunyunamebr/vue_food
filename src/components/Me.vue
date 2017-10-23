@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello animated tada">
     <h1>{{ msg }}</h1>
   </div>
 </template>

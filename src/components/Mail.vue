@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello animated shake">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -19,5 +19,6 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
+ 
 }
 </style>
