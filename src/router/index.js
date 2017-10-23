@@ -1,15 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/Home'
+import Fair from '@/components/Fair'
+import Collect from '@/components/Collect'
+import Mail from '@/components/Mail'
+import Me from '@/components/Me'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/a',
-      name: 'Hello',
-      component: HelloWorld
+  	{ //首页
+  	  path: '/',
+      name: 'Home',
+      component: Home
+  	},
+    { //市集
+      path: '/fair',
+      name: 'Fair',
+      component: Fair
+    },
+    { //收藏
+      path: '/collect',
+      name: 'Collect',
+      component: Collect
+    },
+    { //信箱
+      path: '/mail',
+      name: 'Mail',
+      component: Mail
+    },
+    { //我
+      path: '/me',
+      name: 'Me',
+      component: Me
     }
   ]
 })
