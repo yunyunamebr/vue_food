@@ -15,7 +15,7 @@ export default new Router({
       name: 'Home',
       component: Home
   	},
-    { //市集
+    { //菜谱
       path: '/fair',
       name: 'Fair',
       component: Fair

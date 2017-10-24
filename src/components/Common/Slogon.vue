@@ -1,18 +1,16 @@
 <template>
-  <div>
     <div class="header">
       <h1>{{title}}</h1>
+      <img src="../../assets/img/demo.jpeg" class='avatar'/>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   data(){
     return{
-       title:'每个页面都不一样哦'
+       title:''
     }
-    
   }
 }
 </script>
@@ -21,10 +19,18 @@ export default {
 
 .header{
   background-color: #ffeecc;
-  height: 150px;
+  height: 7.5rem;
+  width: 100%;
+  position: fixed;top:0;
+  z-index: 3;
 }
 h1{
   margin: 0;
   padding: 40px;
+}
+.avatar{
+  height: 5rem;
+  position: absolute;top:1rem;left: 1rem;
+  border-radius: 50%;
 }
 </style>
